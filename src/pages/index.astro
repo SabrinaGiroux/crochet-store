@@ -1,13 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import ItemGrid from "../components/ItemList.astro";
+import Header from "../components/Header.astro";
 import "../assets/styles/global.css";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const items = [
+  { name: "Cat Plushies", img: "https://images4-g.ravelrycache.com/uploads/Anniecarraway/979057073/14_medium.png" },
+  { name: "Ribbed Beanie", img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvivcrochets.com%2Fwp-content%2Fuploads%2F2024%2F12%2Fcrochet-ribbed-beanie-held-edited-scaled.jpg&f=1&nofb=1&ipt=1a5927df240c291d000707129ab193369e1b069355c5cdb015110f0d86d5cb71&ipo=images", link: "https://vivcrochets.com/easy-crochet-ribbed-beanie-free-pattern-tutorial/" },
+  { name: "House Slippers", img: "https://images4-g.ravelrycache.com/uploads/knitcroaddict/894432593/crochet_slippers-6_medium.png", link: "https://www.youtube.com/watch?v=BQsetpvhlf4" },
+  { name: "Scarf", img: "https://images4-f.ravelrycache.com/uploads/RhonddaM/1166814558/upload_medium", link:"https://www.ravelry.com/patterns/library/just-for-him---classic-ribbed-scarf" },
+  { name: "Emotional Support Chicken", img: "https://images4-f.ravelrycache.com/uploads/theknittingtreela/932326156/IMG-5390_medium.jpg", link: "https://www.ravelry.com/patterns/library/emotional-support-chicken" },
+  { name: "Screaming Opposum", img: "https://images4-g.ravelrycache.com/uploads/complicatedknots/975858502/rav2_medium.jpg", link: "https://www.ravelry.com/patterns/library/screaming-opossum" },
+  { name: "Mittens", img: "https://images4-g.ravelrycache.com/uploads/CourtneyJ1214/1044054991/Winter_Wheat_Mittens_-15_medium.jpg" },
+  { name: "Sweater", img: "https://i.etsystatic.com/35738734/r/il/9e0b80/8558531789/il_1588xN.8558531789_85pm.jpg", link: "https://www.etsy.com/ca/listing/4573576060/crochet-mens-sweater-pattern-any-size?ref=shop_home_active_1&dd=1&logging_key=b15df3dd48855feb4881abfb1ae6326d02dbc22d%3A4573576060" },
+
+  { name: "Pop up Animal Coaster", img: "https://images4-g.ravelrycache.com/uploads/crochetmusing/1124950250/popup-animal-coasters-crochet-3_medium.jpg" },
+
+  { name: "Custom", img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2016%2F04%2F01%2F00%2F28%2Fface-1298202_1280.png&f=1&nofb=1&ipt=0d5ea58c2e9abdd3730f2a964059f71fd91e853d3ec89e9812acf76acf794b77&ipo=images" },
+];
+
 ---
 
 <Layout>
-	<body>
-	</body>
+	<Header/>
+	<main>
+      <ItemGrid items={items} />
+    </main>
 </Layout>

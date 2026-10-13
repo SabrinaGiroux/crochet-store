@@ -1,4 +1,15 @@
-body {
-    background: conic-gradient(at 50% calc(100%/6),#64c0e1 60deg,#0000 0), conic-gradient(at calc(100%/6) 50%,#0000 240deg,#568cce 0), conic-gradient(from 180deg at calc(100%/6) calc(500%/6),#ba92de 60deg,#0000 0), conic-gradient(from 180deg at calc(500%/6),#0000 240deg,#ba92de 0) calc(4*.866*16px) 0, repeating-linear-gradient(-150deg,#4469c6 0 calc(100%/6),#0000 0 50%), repeating-linear-gradient(-30deg, #54267e 0 calc(100%/6),#000000 0 50%);
+/* body {
+    background: conic-gradient(at 50% calc(100%/6),#64c0e1 60deg,#0000 0), conic-gradient(at calc(100%/6) 50%,#0000 240deg,#568cce 0), conic-gradient(from 180deg at calc(100%/6) calc(500%/6),#ba92de 60deg,#0000 0), conic-gradient(from 180deg at calc(500%/6),#0000 240deg,#ba92de 0) calc(4*.866*16px) 0, repeating-linear-gradient(-150deg,#4469c6 0 calc(100%/6),#0000 0 50%), repeating-linear-gradient(-30deg, #3890a0 0 calc(100%/6),#c2d3e3 0 50%);
     background-size: calc(6*.866*16px) calc(3*16px);
+} */
+
+body {
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 32px;
+  font-style: normal;
+}
+main {
+    margin: 3em;
+    
 }
